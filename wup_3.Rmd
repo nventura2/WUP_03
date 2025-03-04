@@ -28,14 +28,16 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 basicCN + geom_boxplot()
 ```
   
-  The median drinks are higher in the back row compared to the median drinks in the front and middle rows. We're able to determine that from the boxes above on the graph. 
+The median drinks are higher in the back row compared to the median drinks in the front and middle rows. We're able to determine that from the boxes above on the graph. 
   
-  
+
 ### get fancy  
 
 ```{r}
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
+  
+There are these; we're going to call them "bites" on the boxes that are on the plot above. These represent the standard deviation, which is the amount of drinks consumed.
 
 ## Numerical Summarys 
 

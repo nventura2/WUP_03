@@ -40,8 +40,19 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 There are these; we're going to call them "bites" on the boxes that are on the plot above. These represent the standard deviation, which is the amount of drinks consumed.
 
 ## Numerical Summarys 
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+  
+The chart above shows that the back row is at 12.580471, while front is at 3.806013 and the middle at 6.225381. Proving that our guess that the back row had a higher consumtion of alcohol.
 
 ## Inferential Tests
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+  
+We reject the null hypothesis because the results indicate that the chances are 1 out of 10,000. making the number significantly low showing at 0.000116.
 
 ## Conclusions
 

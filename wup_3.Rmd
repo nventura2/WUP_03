@@ -63,7 +63,7 @@ plot(TukeyHSD(model1),las=2)
 Now that we have the box properly labeled, we can see on the graph that the zero is the only one in the confidence inner poll and is in the middle of the front and middle rows. Which is telling us that the back is different than both of the other rows. Making it that there is no statistical difference between both the front and the middle.
 
 ## Conclusions
-
-
+  
+In conclusion we ran all the possible outcomes, like ggplot, boxplot, favstats, geom_boxplot, model1, as well as plot turkey. All these showed that the back row had the higher consumption of alcohol proving our hypothesis right esulting in us rejecting the null hypothesis. 
   
 
